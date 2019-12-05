@@ -23,7 +23,7 @@
                         background-color="#333744"
                         text-color="#fff"
                         active-text-color="#409eff"
-                unique-opened :collapse = 'isCollapse' :collapse-transition="false" router :default-active="activePath">
+                unique-opened :collapse = 'isCollapse' :collapse-transition="false" router :default-active="$route.path">
 <!--                    一级菜单-->
                     <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
 <!--                        一级菜单的模板区-->
